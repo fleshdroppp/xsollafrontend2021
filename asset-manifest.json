@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/xsollafrontend2021/static/css/main.77fe6c68.chunk.css",
-    "main.js": "/xsollafrontend2021/static/js/main.94496c62.chunk.js",
-    "main.js.map": "/xsollafrontend2021/static/js/main.94496c62.chunk.js.map",
+    "main.js": "/xsollafrontend2021/static/js/main.a853f7c0.chunk.js",
+    "main.js.map": "/xsollafrontend2021/static/js/main.a853f7c0.chunk.js.map",
     "runtime-main.js": "/xsollafrontend2021/static/js/runtime-main.cc4b76c4.js",
     "runtime-main.js.map": "/xsollafrontend2021/static/js/runtime-main.cc4b76c4.js.map",
     "static/js/2.544fb419.chunk.js": "/xsollafrontend2021/static/js/2.544fb419.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.cc4b76c4.js",
     "static/js/2.544fb419.chunk.js",
     "static/css/main.77fe6c68.chunk.css",
-    "static/js/main.94496c62.chunk.js"
+    "static/js/main.a853f7c0.chunk.js"
   ]
 }
