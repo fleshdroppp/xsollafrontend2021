@@ -33,7 +33,7 @@ const Filter = ({ title, options, param, value, onChange}) => {
                 <p>{title}:</p>
             </div>
             <select value={value} onChange={event => onChange(event.target.value)} className={styles.events__filter__selector}>
-                {propsToOptions(options, param)}
+                {options.length !== 0 ? propsToOptions(options, param) : <option>Unavailable!</option>}
             </select>
         </div>
     );

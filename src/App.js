@@ -13,7 +13,7 @@ function App() {
 
     const [events, setEvents] = useState([])
     const [filteredEvents, setFilteredEvents] = useState([])
-    const [favouriteEvents, setFavouriteEvents] = useState(JSON.parse(localStorage.getItem("favouriteEvents")))
+    const [favouriteEvents, setFavouriteEvents] = useState(JSON.parse(localStorage.getItem("favouriteEvents")) || [])
 
     
     const fetchEvents = async () => {

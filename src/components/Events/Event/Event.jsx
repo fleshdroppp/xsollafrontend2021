@@ -22,7 +22,7 @@ const Event = ({ event, favouriteEvents, setFavouriteEvents }) => {
     return (
         <div className={styles.event} style={{ backgroundImage: `url(${event.image})` }}>
             <div onClick={event => addFavouriteEvent(event.target.id)} className={styles.event__favourite}>
-                {favouriteEvents.indexOf(event.id) !== -1
+                {favouriteEvents.indexOf(event.id) !== -1 
                     ? <img id={event.id} src={favourite} alt="favourite button" />
                     : <img id={event.id} src={notFavourite} alt="favourite button" />}
             </div>
