@@ -1,0 +1,63 @@
+.event {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event__title {
+    position: absolute;
+    height: 66px;
+    font-size: 48px;
+    font-family: "Avenir-Black";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    top: 292px;
+    left: 40px;
+}
+
+.event__favourite {
+    position: absolute;
+    width: 14px;
+    height: 18px;
+    top: 40px;
+    left: 545px;
+}
+
+.event__favourite img {
+    width: 100%;
+    height: 100%;
+}
+
+.event__date {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 40px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.event__date p {
+    width: 54px;
+    height: 66px;
+    margin-left: 13px;
+    margin-top: 9px;
+    font-family: "Avenir-Book";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 570;
+    color: white;
+}
