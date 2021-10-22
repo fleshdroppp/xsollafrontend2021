@@ -63,3 +63,17 @@ table {
     flex-direction: column;
     margin: 80px;
 }
+
+.empty__events {
+    font-family: "Avenir-Black";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 66px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

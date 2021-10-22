@@ -3,18 +3,18 @@ import notFavourite from '../../../static/images/favourie.svg'
 import favourite from '../../../static/images/isFavourite.svg'
 import styles from './Event.module.css'
 
-const Event = ({ event, favouriteEvents, setFavouriteEvents }) => {
+const Event = ({ event, favouritesId, setFavouritesId }) => {
 
     const addFavouriteEvent = (event) => {
-        if (favouriteEvents.indexOf(event) !== -1) {
-            favouriteEvents = favouriteEvents.filter(function(item) {
+        if (favouritesId.indexOf(event) !== -1) {
+            favouritesId = favouritesId.filter(function(item) {
                 return item !== event
             })
-            setFavouriteEvents(favouriteEvents)
-            localStorage.setItem("favouriteEvents",JSON.stringify(favouriteEvents));
+            setFavouritesId(favouritesId)
+            localStorage.setItem("favouritesId",JSON.stringify(favouritesId));
         } else {    
-            setFavouriteEvents([...favouriteEvents, event])
-            localStorage.setItem("favouriteEvents",JSON.stringify([...favouriteEvents, event]));
+            setFavouritesId([...favouritesId, event])
+            localStorage.setItem("favouritesId",JSON.stringify([...favouritesId, event]));
         }
         
     }
@@ -22,7 +22,7 @@ const Event = ({ event, favouriteEvents, setFavouriteEvents }) => {
     return (
         <div className={styles.event} style={{ backgroundImage: `url(${event.image})` }}>
             <div onClick={event => addFavouriteEvent(event.target.id)} className={styles.event__favourite}>
-                {favouriteEvents.indexOf(event.id) !== -1 
+                {favouritesId.indexOf(event.id) !== -1 
                     ? <img id={event.id} src={favourite} alt="favourite button" />
                     : <img id={event.id} src={notFavourite} alt="favourite button" />}
             </div>
